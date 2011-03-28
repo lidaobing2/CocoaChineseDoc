@@ -1,0 +1,2 @@
+
+{"shortOverview":"Illustrates how to use a split view controller with multiple detail views.","revisionSummary":"Last change: Added localization support; viewDidUnload now releases IBOutlets.","url":"../../samplecode/MultipleDetailViews/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009775","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Shows how to use a search field in a toolbar and present a list of recent searches in a popover.","revisionSummary":"Last change: viewDidUnload now releases IBOutlets, added localization support, fixed rotation layout bug.","url":"../../samplecode/ToolbarSearch/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009461","dataFile":false}

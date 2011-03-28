@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Foundation Framework Reference: The Foundation Framework</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Reference">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/20001091">
+    <meta id="date" name="date" content="2010-05-20">
+    <meta id="description" name="description" content="Describes the Foundation framework API.">
+    <meta id="book-title" name="book-title" content="Foundation Framework Reference">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Reference}, {Framework/Core Services Layer/Foundation}">
+    <meta name="pdf" contents="../FoundationObjC.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../FoundationObjC.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 27000">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="The Foundation Framework">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="Foundation Framework Reference" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../History/History.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="../_index.html">
+    <link rel="stylesheet" type="text/css" href="../../../../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../../../../Resources/565/CSS/ie.css"><![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="../../../../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/20000687" title="The Foundation Framework"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../History/History.html'>Next</a><a class='previousLink' rel='prev' href='../_index.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/20000687-BAJDAJAG" title="The Foundation Framework"></a><h1 id="pageTitle">The Foundation Framework</h1><div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr><td scope="row"><strong><span class="FrameworkPath">Framework</span></strong></td><td><div class="zSharedSpecBoxHeadList">/System/Library/Frameworks/Foundation.framework</div></td></tr><tr><td scope="row"><strong><span class="HeaderFileDirectory">Header file directories</span></strong></td><td><div class="zSharedSpecBoxHeadList">/System/Library/Frameworks/Foundation.framework/Headers</div></td></tr><tr><td scope="row"><strong><span class="DeclaredIn">Declared in</span></strong></td><td><div class="zSharedSpecBoxHeadList"><span class="content_text">FoundationErrors.h</span><br/><span class="content_text">NSArray.h</span><br/><span class="content_text">NSAttributedString.h</span><br/><span class="content_text">NSAutoreleasePool.h</span><br/><span class="content_text">NSBundle.h</span><br/><span class="content_text">NSByteOrder.h</span><br/><span class="content_text">NSCache.h</span><br/><span class="content_text">NSCalendar.h</span><br/><span class="content_text">NSCharacterSet.h</span><br/><span class="content_text">NSCoder.h</span><br/><span class="content_text">NSComparisonPredicate.h</span><br/><span class="content_text">NSCompoundPredicate.h</span><br/><span class="content_text">NSData.h</span><br/><span class="content_text">NSDate.h</span><br/><span class="content_text">NSDateFormatter.h</span><br/><span class="content_text">NSDecimal.h</span><br/><span class="content_text">NSDecimalNumber.h</span><br/><span class="content_text">NSDictionary.h</span><br/><span class="content_text">NSEnumerator.h</span><br/><span class="content_text">NSError.h</span><br/><span class="content_text">NSException.h</span><br/><span class="content_text">NSExpression.h</span><br/><span class="content_text">NSFileHandle.h</span><br/><span class="content_text">NSFileManager.h</span><br/><span class="content_text">NSFileWrapper.h</span><br/><span class="content_text">NSFormatter.h</span><br/><span class="content_text">NSHTTPCookie.h</span><br/><span class="content_text">NSHTTPCookieStorage.h</span><br/><span class="content_text">NSIndexPath.h</span><br/><span class="content_text">NSIndexSet.h</span><br/><span class="content_text">NSInvocation.h</span><br/><span class="content_text">NSKeyValueCoding.h</span><br/><span class="content_text">NSKeyValueObserving.h</span><br/><span class="content_text">NSKeyedArchiver.h</span><br/><span class="content_text">NSLocale.h</span><br/><span class="content_text">NSLock.h</span><br/><span class="content_text">NSMethodSignature.h</span><br/><span class="content_text">NSNetServices.h</span><br/><span class="content_text">NSNotification.h</span><br/><span class="content_text">NSNotificationQueue.h</span><br/><span class="content_text">NSNull.h</span><br/><span class="content_text">NSNumberFormatter.h</span><br/><span class="content_text">NSObjCRuntime.h</span><br/><span class="content_text">NSObject.h</span><br/><span class="content_text">NSOperation.h</span><br/><span class="content_text">NSOrthography.h</span><br/><span class="content_text">NSPathUtilities.h</span><br/><span class="content_text">NSPort.h</span><br/><span class="content_text">NSPredicate.h</span><br/><span class="content_text">NSProcessInfo.h</span><br/><span class="content_text">NSPropertyList.h</span><br/><span class="content_text">NSProxy.h</span><br/><span class="content_text">NSRange.h</span><br/><span class="content_text">NSRegularExpression.h</span><br/><span class="content_text">NSRunLoop.h</span><br/><span class="content_text">NSScanner.h</span><br/><span class="content_text">NSSet.h</span><br/><span class="content_text">NSSortDescriptor.h</span><br/><span class="content_text">NSStream.h</span><br/><span class="content_text">NSString.h</span><br/><span class="content_text">NSTextCheckingResult.h</span><br/><span class="content_text">NSThread.h</span><br/><span class="content_text">NSTimeZone.h</span><br/><span class="content_text">NSTimer.h</span><br/><span class="content_text">NSURL.h</span><br/><span class="content_text">NSURLAuthenticationChallenge.h</span><br/><span class="content_text">NSURLCache.h</span><br/><span class="content_text">NSURLConnection.h</span><br/><span class="content_text">NSURLCredential.h</span><br/><span class="content_text">NSURLCredentialStorage.h</span><br/><span class="content_text">NSURLError.h</span><br/><span class="content_text">NSURLProtectionSpace.h</span><br/><span class="content_text">NSURLProtocol.h</span><br/><span class="content_text">NSURLRequest.h</span><br/><span class="content_text">NSURLResponse.h</span><br/><span class="content_text">NSUndoManager.h</span><br/><span class="content_text">NSUserDefaults.h</span><br/><span class="content_text">NSValue.h</span><br/><span class="content_text">NSValueTransformer.h</span><br/><span class="content_text">NSXMLParser.h</span><br/><span class="content_text">NSZone.h</span><br/></div></td></tr></table></div>
+
+
+
+<section><a name="//apple_ref/doc/uid/20000687-1160" title="Introduction"></a><h2 class="jump">Introduction</h2>
+<p>The Foundation framework defines a base layer of Objective-C classes. In addition to providing a set of useful primitive object classes, it introduces several paradigms that define functionality not covered by the Objective-C language. The Foundation framework is designed with these goals in mind:</p>
+<ul class="ul"><li class="li"><p>Provide a small set of basic utility classes.</p></li>
+<li class="li"><p>Make software development easier by introducing consistent conventions for things such as deallocation.</p></li>
+<li class="li"><p>Support Unicode strings, object persistence, and object distribution.</p></li>
+<li class="li"><p>Provide a level of OS independence, to enhance portability.</p></li></ul>
+<p>The Foundation framework includes the root object class, classes representing basic data types such as strings and byte arrays, collection classes for storing other objects, classes representing system information such as dates, and classes representing communication ports. See <span class="content_text"><a href="#//apple_ref/doc/uid/20000687-25735">Figure I-1</a></span> for a list of those classes that make up the Foundation framework.</p>
+<p>The Foundation framework introduces several paradigms to avoid confusion in common situations, and to introduce a level of consistency across class hierarchies. This consistency is done with some standard policies, such as that for object ownership (that is, who is responsible for disposing of objects), and with abstract classes like <code>NSEnumerator</code>. These new paradigms reduce the number of special and exceptional cases in an API and allow you to code more efficiently by reusing the same mechanisms with various kinds of objects.</p>
+<section><a name="//apple_ref/doc/uid/20000687-9508" title="Foundation Framework Classes"></a><h3 class="jump">Foundation Framework Classes</h3>
+<p>The Foundation class hierarchy is rooted in the Foundation framework’s <code>NSObject</code> class (see <span class="content_text"><a href="#//apple_ref/doc/uid/20000687-25735">Figure I-1</a></span>). The remainder of the Foundation framework consists of several related groups of classes as well as a few individual classes. Many of the groups form what are called class clusters—abstract classes that work as umbrella interfaces to a versatile set of private subclasses. <code><a href="../../Classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/cl/NSString" target="_self">NSString</a></code> and <code><a href="../../Classes/NSMutableString_Class/Reference/Reference.html#//apple_ref/occ/cl/NSMutableString" target="_self">NSMutableString</a></code>, for example, act as brokers for instances of various private subclasses optimized for different kinds of storage needs. Depending on the method you use to create a string, an instance of the appropriate optimized class will be returned to you.</p><div class="notebox"><aside><a name="//apple_ref/doc/uid/20000687-SW1" title="Note"></a><p><strong>Note:</strong>&nbsp;In the following class-hierarchy diagrams, blue-shaded areas include classes that are available in Mac OS X and iOS; gray-shaded areas include classes that are available in Mac OS X only. </p><p></p></aside></div>
+<figure class="figure"><a name="//apple_ref/doc/uid/20000687-25735" title="Figure I-1Cocoa Objective-C Hierarchy for Foundation"></a><a name="//apple_ref/doc/uid/20000687-BBCJHIEF" title="Figure I-1Cocoa Objective-C Hierarchy for Foundation"></a><figcaption><strong class="caption_number">Figure I-1</strong>&nbsp;&nbsp;Cocoa Objective-C Hierarchy for Foundation</figcaption>
+<img src="Art/objc_foundation_A.jpg" alt="Cocoa Objective-C Hierarchy for Foundation" width="373" height="498"></figure>
+<figure class="figure"><img src="Art/objc_foundation2_A.jpg" alt="Class hierarchy diagram for Foundation (part 2)" width="383" height="674"></figure>
+<figure class="figure"><img src="Art/objc_foundation3_A.jpg" alt="Class hierarchy diagram for Foundation (part 3)" width="374" height="642"></figure>
+<p>Many of these classes have closely related functionality:</p>
+<ul class="ul"><li class="li"><p>Data storage. <code>NSData</code> and <code>NSString</code> provide object-oriented storage for arrays of bytes. NSValue and NSNumber provide object-oriented storage for arrays of simple C data values. <code>NSArray</code>, <code>NSDictionary</code>, and <code>NSSet</code> provide storage for Objective-C objects of any class.</p></li>
+<li class="li"><p>Text and strings. <code>NSCharacterSet</code> represents various groupings of characters that are used by the <code>NSString</code> and <code>NSScanner</code> classes. The <code>NSString</code> classes represent text strings and provide methods for searching, combining, and comparing strings. An <code>NSScanner</code> object is used to scan numbers and words from an <code>NSString</code> object.</p></li>
+<li class="li"><p>Dates and times. The <code>NSDate</code>, <code>NSTimeZone</code>, and <code>NSCalendar</code> classes store times and dates and represent calendrical information. They offer methods for calculating date and time differences. Together with <code>NSLocale</code>, they provide methods for displaying dates and times in many formats, and for adjusting times and dates based on location in the world.</p></li>
+<li class="li"><p>Application coordination and timing. <code>NSNotification</code>, <code>NSNotificationCenter</code>, and <code>NSNotificationQueue</code> provide systems that an object can use to notify all interested observers of changes that occur. You can use an NSTimer object to send a message to another object at specific intervals.</p></li>
+<li class="li"><p>Object creation and disposal. <code>NSAutoreleasePool</code> is used to implement the delayed-release feature of the Foundation framework.</p></li>
+<li class="li"><p>Object distribution and persistence. The data that an object contains can be represented in an architecture-independent way using <code>NSPropertyListSerialization</code>. The <code>NSCoder</code> and its subclasses take this process a step further by allowing class information to be stored along with the data. The resulting representations are used for archiving and for object distribution.</p></li>
+<li class="li"><p>Operating-system services. Several classes are designed to insulate you from the idiosyncrasies of various operating systems. <code>NSFileManager</code> provides a consistent interface for file operations (creating, renaming, deleting, and so on). <code>NSThread</code> and <code>NSProcessInfo</code> let you create multithreaded applications and query the environment in which an application runs.</p></li>
+<li class="li"><p>URL loading system. A set of classes and protocols provide access to common Internet protocols.</p></li></ul></section></section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../History/History.html'>Next</a><a class='previousLink' rel='prev' href='../_index.html'>Previous</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 1997, 2010 Apple Inc. All Rights Reserved. &#40;Last updated: 2010-05-20&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2FIntro%2FIntroFoundation.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2FIntro%2FIntroFoundation.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2FIntro%2FIntroFoundation.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../../../../Resources/565/JavaScript/tasks.js"></script>
+</html>

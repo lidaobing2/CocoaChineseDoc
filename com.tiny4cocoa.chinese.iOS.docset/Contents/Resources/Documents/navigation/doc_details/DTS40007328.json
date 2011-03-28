@@ -1,0 +1,2 @@
+
+{"shortOverview":"Demonstrates how to support single finger painting using OpenGL ES.","revisionSummary":"Last change: Updated to take into account the view's contentScaleFactor. Updated to draw strictly with premultiplied alpha pixel data.","url":"../../samplecode/GLPaint/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007328","dataFile":false}

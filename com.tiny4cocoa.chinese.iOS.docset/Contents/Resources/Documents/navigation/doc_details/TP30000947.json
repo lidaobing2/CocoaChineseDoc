@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an opaque type for managing drawing operations in a bitmap.","revisionSummary":"Last change: Clarified the use of a NULL data parameter to CGBitmapContextCreate.","url":"../../documentation/GraphicsImaging/Reference/CGBitmapContext/Reference/reference.html#//apple_ref/doc/uid/TP30000947","dataFile":false}

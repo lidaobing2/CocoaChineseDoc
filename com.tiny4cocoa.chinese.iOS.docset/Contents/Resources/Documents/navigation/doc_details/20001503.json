@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutable unordered collection of distinct values.","revisionSummary":"Last change: Made descriptions of CFSetCreateMutable and CFSetCreateMutableCopy consistent with descriptioins of similar functions.","url":"../../documentation/CoreFoundation/Reference/CFMutableSetRef/Reference/reference.html#//apple_ref/doc/uid/20001503","dataFile":false}

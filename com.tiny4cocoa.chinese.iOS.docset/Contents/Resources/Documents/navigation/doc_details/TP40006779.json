@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for views that respond to touches by sending action messages.","revisionSummary":"Last change: Clarified the description for the addTarget:action:forControlEvents: method.","url":"../../documentation/UIKit/Reference/UIControl_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40006779","dataFile":false}

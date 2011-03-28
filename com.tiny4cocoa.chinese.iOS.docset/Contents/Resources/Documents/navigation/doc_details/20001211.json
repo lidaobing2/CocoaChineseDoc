@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an immutable character string.","revisionSummary":"Last change: Added definitions of functions related to surrogate pairs; clarified descriptions of CFStringGetCString and CFStringCreateArrayBySeparatingStrings.","url":"../../documentation/CoreFoundation/Reference/CFStringRef/Reference/reference.html#//apple_ref/doc/uid/20001211","dataFile":false}

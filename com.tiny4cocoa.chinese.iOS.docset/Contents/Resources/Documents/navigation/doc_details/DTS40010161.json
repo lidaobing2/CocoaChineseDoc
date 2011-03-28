@@ -1,0 +1,2 @@
+
+{"shortOverview":"demonstrates how to target older OS versions while building with newly released APIs.","revisionSummary":"Last change: Changed the rainy.png image into a JPEG image, because PNG-optimization made it unreadable on some platforms when sent as an attachment.","url":"../../samplecode/MessageComposer/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010161","dataFile":false}

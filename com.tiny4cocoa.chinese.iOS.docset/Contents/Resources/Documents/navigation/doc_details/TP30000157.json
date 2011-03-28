@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes services to read and evaluate certificates and to use cryptographic keys.","revisionSummary":"Last change: Added iOS 4 trust exception functions (SecTrustCopyExceptions and SecTrustSetExceptions).","url":"../../documentation/Security/Reference/certifkeytrustservices/Reference/reference.html#//apple_ref/doc/uid/TP30000157","dataFile":false}

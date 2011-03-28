@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the class implementing items on tab bars, which allow one item to be selected at a time.","revisionSummary":"Last change: Updated the initWithTabBarSystemItem:tag: method discussion to reflect the read-only nature of the title and image properties.","url":"../../documentation/UIKit/Reference/UITabBarItem_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40006928","dataFile":false}

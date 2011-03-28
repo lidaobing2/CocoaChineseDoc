@@ -1,0 +1,2 @@
+
+{"shortOverview":"QA1480: Explains how to use NSDateFormatter with fixed-format dates, like those in various Internet protocols.","revisionSummary":"Last change: RFC 3339 dates are always in UTC, so set the time zone on the RFC 3339 date formatter to UTC.","url":"../../qa/qa2010/qa1480.html#//apple_ref/doc/uid/DTS40009878","dataFile":false}

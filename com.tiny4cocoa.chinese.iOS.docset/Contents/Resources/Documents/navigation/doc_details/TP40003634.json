@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a representation of logical gate and comparison operations.","revisionSummary":"Last change: Noted change in behavior in initialization (copies rather than retains predicates array).","url":"../../documentation/Cocoa/Reference/Foundation/Classes/NSCompoundPredicate_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003634","dataFile":false}

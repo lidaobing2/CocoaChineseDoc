@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for receiving recording state messages.","revisionSummary":"Last change: Updated for iOS 4.0 by adding a description for the audioRecorderEndInterruption:withFlags: method.","url":"../../documentation/AVFoundation/Reference/AVAudioRecorderDelegate_ProtocolReference/Reference/Reference.html#//apple_ref/doc/uid/TP40008239","dataFile":false}

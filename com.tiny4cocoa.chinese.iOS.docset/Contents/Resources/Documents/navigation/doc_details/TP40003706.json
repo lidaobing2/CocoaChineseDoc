@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the Cocoa root class.","revisionSummary":"Last change: Updated the performSelectorOnMainThread... method descriptions to reflect what happens during sequential calls to the method from the same thread.","url":"../../documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003706","dataFile":false}

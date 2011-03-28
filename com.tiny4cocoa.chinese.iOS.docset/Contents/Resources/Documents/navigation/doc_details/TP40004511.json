@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for the time behavior of an animation.","revisionSummary":"Last change: Deprecated kCAFillModeFrozen, which never shipped. Added infinite value to repeatCount property.","url":"../../documentation/GraphicsImaging/Reference/CAMediaTiming_protocol/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004511","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the UIGestureRecognizer subclass that recognizes tap gestures.","revisionSummary":"Last change: Revised the description of tap gestures as sending an action message for each state of the gesture recognizer.","url":"../../documentation/UIKit/Reference/UITapGestureRecognizer_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40009286","dataFile":false}

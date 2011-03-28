@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutable collection of key-value pairs.","revisionSummary":"Last change: Clarified capacity argument in CFDictionaryCreateMutable and CFDictionaryCreateMutableCopy.","url":"../../documentation/CoreFoundation/Reference/CFMutableDictionaryRef/Reference/reference.html#//apple_ref/doc/uid/20001497","dataFile":false}

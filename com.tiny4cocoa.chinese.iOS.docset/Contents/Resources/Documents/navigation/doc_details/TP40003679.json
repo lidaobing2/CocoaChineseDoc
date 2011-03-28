@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an endpoint for distributed object connections or interprocess messaging.","revisionSummary":"Last change: Added important note that this class is scheduled for future deprecation. Use NSMachPort or NSSocketPort instead.","url":"../../documentation/Cocoa/Reference/Foundation/Classes/NSMessagePort_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003679","dataFile":false}

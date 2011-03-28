@@ -1,0 +1,2 @@
+
+{"shortOverview":"Explains how to create, manipulate, and search strings in Core Foundation, and how strings interact with encodings and character sets.","revisionSummary":"Last change: Added information to &quot;Handling External Representations of Strings&quot; about string encodings that do not include a BOM.","url":"../../documentation/CoreFoundation/Conceptual/CFStrings/introCFStrings.html#//apple_ref/doc/uid/10000131i","dataFile":false}

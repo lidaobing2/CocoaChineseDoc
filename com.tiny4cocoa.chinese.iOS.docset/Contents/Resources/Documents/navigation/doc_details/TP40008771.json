@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes functions and constants used to manipulate uniform type identifiers.","revisionSummary":"Last change: Clarified that some UTTypes are abstract types; they do not declare that the data is in a specific format, they declare what the data actually is (audio, video, etc.).","url":"../../documentation/MobileCoreServices/Reference/UTTypeRef/Reference/reference.html#//apple_ref/doc/uid/TP40008771","dataFile":false}

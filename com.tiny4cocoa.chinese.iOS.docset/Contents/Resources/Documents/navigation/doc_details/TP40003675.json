@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutex-based lock.","revisionSummary":"Last change: Added a warning describing what happens when you unlock a lock that is not currently locked.","url":"../../documentation/Cocoa/Reference/Foundation/Classes/NSLock_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003675","dataFile":false}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iOS Overview</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Getting Started">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40007592">
+    <meta id="date" name="date" content="2010-07-08">
+    <meta id="description" name="description" content="Provides a high-level overview of iOS. ">
+    <meta id="book-title" name="book-title" content="iOS Overview">
+    <meta id="book-root" name="book-root" content="./">
+    <meta id="book-json" name="book-json" content="book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Getting Started}, {Topic/General}">
+    
+    
+    <meta id="generator" name="generator" content="Gutenberg 26977M">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="iOS Overview">
+    <meta id="resources-uri" name="resources-uri" content="../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="iOS Overview" type="text/html" href="index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ie.css"><![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40007592" title="iOS Overview"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40007592-CH1-SW2" title="iOS Overview"></a><h1 id="pageTitle">iOS概述</h1>
+		<p>
+		iOS包含在iPhone和iPod touch上运行本地应用程序所需的操作系统和技术基础。iPhone跟Mac OS X有共同的基础构架和底层技术。但是iOS是为了满足移动环境而设计的，用户需要和一般的环境下略有区别。现有的Mac OS X开发者会发现很多熟悉的技术，但是他们也会发现很多iOS专有的技术，例如多点触摸和加速度传感器支持。
+		</p>
+		
+		<p>
+		iOS SDK包含对iPhone 应用程序进行开发，测试，运行，调试，性能调优所需代码，信息和工具。Xcode工具已经升级到可以支持iOS的开发。Xcode不仅提供了基本的代码编辑，编译和调试环境，而且提供了在iPhone和iPod touch设备上测试程序的启动点。Xcode还可以让您在iPhone模拟器内运行您的程序，iPhone模拟器可以在您的Macintosh计算机内模拟基础的iPhone OS环境。
+		</p>
+		<p>
+		本文对构成iOS的基础特性提供了高层的概述，帮助你了解这个平台。之后，你可以在iPhone开发者中心找到其他的文章可以帮助你迅速的理解创建iPhone应用程序的基础流程。你可以利用这些文章帮助你学习iOS开发。
+		</p>
+		
+		<figure class="figure"><a name="//apple_ref/doc/uid/TP40007592-CH1-SW1"></a><img src="Art/overview_iphonetouch.jpg" alt="image: Art/overview_iphonetouch.jpg" width="457" height="369"></figure>
+<!-- This template is being used for both PDF and HTML. -->
+<!-- TopicBook.pm currently relies on the element name bmini_toc. -->
+
+    <h4>Contents:</h4>
+    
+    <p class="blockquote">
+
+        
+			
+            
+                <a href="#//apple_ref/doc/uid/TP40007592-CH1-SW3">iOS技术层</a>
+                
+            <br/>
+            
+        
+			
+            
+                <a href="#//apple_ref/doc/uid/TP40007592-CH1-SW5">为iOS编写代码</a>
+                
+            <br/>
+            
+        
+			
+            
+                <a href="#//apple_ref/doc/uid/TP40007592-CH1-SW6">从哪里开始</a>
+                
+            <br/>
+            
+        
+
+    </p><br/>
+
+<section><a name="//apple_ref/doc/uid/TP40007592-CH1-SW3" title="iOS Technology Layers"></a>
+<h2 class="jump">iOS技术层</h2>
+<p>
+
+iOS的核心基于构成Mac OS X的Mach核心的一个变种。核心之上是用来实现平台上面应用程序的服务层。
+
+<span class="content_text"><a href="#//apple_ref/doc/uid/TP40007592-CH1-SW4">图 1-1</a></span>展示了这些技术层的表层概述。</p>
+<figure class="figure"><a name="//apple_ref/doc/uid/TP40007592-CH1-SW4" title="Figure 1-1iOS technology layers"></a><figcaption><strong class="caption_number">图 1-1</strong>&nbsp;&nbsp;iOS技术层</figcaption><img src="Art/overview_systemlayers.jpg" alt="" width="260" height="153"></figure>
+
+<p>
+这些层在你实现自己的代码时给你了选择。例如，Core OS和Core Services层包含了iPhone的基础接口，包括用来访问文件，底层数据类型，Bonjour服务，网络接口等等的接口。这些接口大多数都是基于C语言的，包括Core Foundation，CFNetwork，SQLite，和访问POSIX线程和UNIX Socket的技术。
+</p>
+
+<p>
+
+当你进入更高的技术层，你会发现用发现一些更表层的技术，它们基于C和基于<span class="pediaLink" data-header="Objective-C" data-contents="Objective-C defines a small     but powerful set of extensions to the ANSI  C programming language that enables sophisticated object-oriented programmin    g. "><a href="../../../documentation/General/Conceptual/DevPedia-CocoaCore/ObjectiveC.html#//apple_ref/doc/uid/TP40008195    -CH43" target="_self">Objective-C</a></span>代码混合的接口。例如，媒体层包含支持2D和3D绘图，音频和视频的基础技术。这个层包括基于C的技术，OpenGL ES，Quartz和核心音频。这个层还包括核心动画技术，核心动画是表层的基于Objective-C的动画引擎。
+</p>
+
+<p>
+在Cocoa Touch层，大多数的技术都是基于Objective-C的。这个层的框架提供了应用程序的基础架构。例如，基础架构提供了集合，文件管理，网络操作等等的面向对象支持。UIKit框架提供了应用程序的视觉架构，包括了实现窗口，视图，控件，以及这些对象的控制器等等的类结构。这个层的其他的框架，给你访问用户通讯录，照片信息，加速度传感器和设备其他硬件特性的能力。
+</p>
+
+<p>
+任何新项目的起点，都是Cocoa Touch层，具体来说就是UIKit框架。当确定采用何种附加技术的时候，强烈建议你首先从框架的表层技术开始，仅在需要的时候使用框架的底层技术。最表层的框架可以轻易的支持你所需要的绝对多数效果的标准系统行为。只有在更高层的框架无法实现你所需要的定制行为的时候，才应该使用底层框架。
+</p>
+
+<p>关于iOS使用的技术，更详尽的信息请参考<em><a href="../../../documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007898" target="_self">iOS技术概述</a></em>.</p></section>
+
+<section><a name="//apple_ref/doc/uid/TP40007592-CH1-SW5" title="Writing Code for iOS"></a><h2 class="jump">为iOS编写代码</h2>
+<p>
+iOS SDK支持创建可以运行在iOS本地的图形化应用程序。你创建的应用程序可以安装在用户的主屏幕上，就像其他的系统应用程序，例如照片，天气和时钟。程序一旦启动，除了操作系统核心和一些底层守护进程以外，你的程序就会成为系统唯一运行的应用程序。运行期间，你的程序会独占整个屏幕，获得用户全部的注意力。这里没有用来显示内容的独立的文档窗口的概念。反之，程序的所有数据显示在一个窗口内。
+</p>
+<p>
+iOS的事件处理模型与传统的桌面程序也有显著的不同。iOS并不依赖于传统的鼠标和键盘事件，而是引入了触摸事件。一个触摸事件可以随时发生，也可以和一个或几个附加的触摸事件一起发生。触摸可以用于检测跟内容的简单交互，拖放对象等，也可以用于检测复杂的手势或交互行为，例如手指合拢和手指分开的手势（例如在照片程序中，用于放大缩小照片）。
+</p>
+<p>
+在考虑程序的基本结构之前，你应该先考虑用户实际上如何使用它。iPhone应用程序应该纯粹，且关注于用户的移动需求。记住用户希望迅速得到信息，而不想花大量的时间在屏幕的不同层之间寻找。提供简单的布局强调用户更需要的关键信息。对游戏或者其他娱乐程序，你应该考虑用户希望如何和你的程序交互，并在恰当的时候采用，例如速度传感器，摄像头等先进技术。
+</p>
+<p>
+当你开始开发，你需要使用的框架是基础框架和UIKit框架。这些框架提供了所有iPhone程序所需的关键服务。当你精炼你的程序时，你需要考虑研究系统中的其他框架，看他们可以提供什么样的服务。每个框架的文档都包括了相关概念资料的链接，帮助你理解如何使用这个框架。
+</p>
+<p>更多关于基础框架和UIKit框架的信息，请参考<em><a href="../../../documentation/Cocoa/Reference/Foundation/ObjC_classic/_index.html#//apple_ref/doc/uid/20001091" target="_self">Foundation框架参考手册</a></em>以及<em><a href="../../../documentation/UIKit/Reference/UIKit_Framework/_index.html#//apple_ref/doc/uid/TP40006955" target="_self">UIKit框架参考手册</a></em>.</p></section>
+
+<section><a name="//apple_ref/doc/uid/TP40007592-CH1-SW6" title="Where to Start"></a><h2 class="jump">从哪里开始</h2>
+<p>使用Xcode提供的内建项目模板，创建运行在iOS上的简单的应用程序是相对简单的，但是如果你想创建一个有点用处，看起来很不错的程序，还是需要你花点时间仔细阅读文档。至少，你需要花点时间通读iPhone开发者中心的其他文章，他们介绍了创建程序需要的工具和流程。</p>
+<p>如果你完全不熟悉iOS和Mac OS X，那么对于在这个平台上编写代码来说，很重要的一点是，花点时间理解iOS开发中的基本设计模式和约定。当程序利用了框架提供的所有能力带来的好处的时候，程序就会在iOS下运行的最好。如果你花时间尝试围绕基本的框架行为，你可能会发现创建你自己的程序比简单的学习基本的设计模式困难的多。每个 iPhone开发者都需要了解的基本信息详见<em><a href="../../../documentation/Cocoa/Conceptual/CocoaFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002974" target="_self">Cocoa基础指南</a></em>。该文档包含了Objective-C语言的基础，以及UIKit或者其他系统框架使用的编程约定和设计模式。</p>
+<p>一旦你理解了创建iPhone应用程序的基本约定，你可以参考<em><a href="../../../documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072" target="_self">iOS Application Programming Guide</a></em>iOS编程指南获取更详尽的关于开发流程的信息。本书提供了编写iPhone应用程序的核心概念和基于任务组织的信息，包括如何显示用户介面，处理事件，和从iOS核心特性获得好处的例子。本书还描述了完整的开发流程，并介绍了如何利用 Xcode构建和运行应用程序。</p>
+<p>除了<em><a href="../../../documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072" target="_self">iOS编程指南</a></em>，你还应该浏览可用的例子代码。iOS提供了大量的具有全部特性的例子，用来展现如何使用现有的技术创建真实世界的应用程序。你可以使用这些例子作为你自己的应用程序的起点，或者你可以观察它们学习如何使用这些特性。</p>
+
+</section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2010 Apple Inc. All Rights Reserved. &#40;Last updated: 2010-07-08&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_iPhone_OS_Overview%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007592-2.1&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_iPhone_OS_Overview%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007592-2.1&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_iPhone_OS_Overview%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007592-2.1&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/tasks.js"></script>
+</html>

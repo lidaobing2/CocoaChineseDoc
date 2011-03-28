@@ -1,0 +1,2 @@
+
+{"shortOverview":"Shows how to use gesture recognizers and animated update blocks with a table view.","revisionSummary":"Last change: First public version. * Uses plays and quotations instead of RSS feed. * Uses SectionInfo class instead of struct. * More comments. * Minor user interface changes.","url":"../../samplecode/TableViewUpdates/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010139","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"QA1688: Describes situations that can prevent view controllers from rotating.","revisionSummary":"Last change: Added the case of not calling super on -(id)init.","url":"../../qa/qa2010/qa1688.html#//apple_ref/doc/uid/DTS40009879","dataFile":false}

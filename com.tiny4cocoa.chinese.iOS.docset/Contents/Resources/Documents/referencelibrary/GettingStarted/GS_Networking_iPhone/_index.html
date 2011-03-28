@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting Started with Networking &amp; Internet: Introduction</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Getting Started">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40007301">
+    <meta id="date" name="date" content="2009-11-17">
+    <meta id="description" name="description" content="Presents a guided introduction to discovering and using network services in iOS software.">
+    <meta id="book-title" name="book-title" content="Getting Started with Networking &amp; Internet">
+    <meta id="book-root" name="book-root" content="./">
+    <meta id="book-json" name="book-json" content="book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Getting Started}, {Topic/Networking & Internet}">
+    
+    
+    <meta id="generator" name="generator" content="Gutenberg 26977M">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Introduction">
+    <meta id="resources-uri" name="resources-uri" content="../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="Getting Started with Networking &amp; Internet" type="text/html" href="index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ie.css"><![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40007301" title="Introduction"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40007301-CH1-SW1" title="Introduction"></a><h2>Introduction</h2><a name="//apple_ref/doc/uid/TP40007301-CH1-SW2" title="Overview"></a><h3>Overview</h3><p>iOS includes several frameworks and libraries to let developers add networking and Internet-based features to their applications. Developers gain access to major protocols and services through Foundation and Core Foundation, as well as through CFNetwork and BSD Sockets.</p><ul><li><p>Foundation is an Objective-C-based framework that provides object-oriented abstractions for various CFNetwork APIs.</p></li><li><p>Core Foundation is a C-based framework that provides (among other things) convenient system-independent methods of creating, reading, updating, or deleting a URL resource.</p></li><li><p>CFNetwork is a C-based framework that lets your application perform a variety of network tasks, such as integrating sockets with run loops and communicating with HTTP and FTP servers.</p></li><li><p>CFNetServices is a C-based API that allows you to discover or register a Bonjour network service, such as a printer or file server.</p></li><li><p>NSNetService and NSNetServiceBrowser are classes within the Foundation framework that let you manage Bonjour network services.</p></li><li><p>BSD networking APIs (part of libSystem) provide low-level socket functions that may be familiar to you if you are coming from other platforms.</p></li></ul><p>When you use these interfaces, you do not have to choose whether to use the Wi-Fi or cell-based radios yourself. The interfaces automatically access the underlying device hardware, choose the best transmission option, and seamlessly switch from one to the other as needed.</p><a name="//apple_ref/doc/uid/TP40007301-CH1-SW3" title="The Basics"></a><h3>The Basics</h3><p>Before you begin writing code:</p><ul><li><p>Read <span class="content_text"><a href="../../../technotes/tn2009/tn2152.html#//apple_ref/doc/uid/DTS40009179" target="_self">Document Transfer Strategies</a></span> for a survey of issues to consider when writing a networking application for iOS.</p></li><li><p>Choose the language you want to use for writing your networking code. iOS supports networking code written in C and Objective-C. Your choice depends largely on which language you are most comfortable using and on whether you are porting existing networking code from another platform.</p></li><li><p>Decide whether you want to work with sockets directly or use an abstraction layer. iOS provides convenient abstractions for most socket interactions, making direct socket communication unnecessary.</p></li><li><p>Decide whether you want to use Bonjour to discover existing network services or register new ones.</p></li></ul><p>After you have taken these steps, you are better equipped to choose which networking API or APIs you want to use.</p><a name="//apple_ref/doc/uid/TP40007301-CH1-SW4" title="Next Steps"></a><h3>Next Steps</h3><p>If you’re developing applications that communicate over a network, you want to be familiar with the APIs that iOS offers so that you can use them to access network protocols and services. If you’re developing applications that will interact with web servers, for example, you might choose Apple’s HTTP-based APIs in Core Foundation or Foundation. If you’re writing software that requires direct access to sockets, you need to understand the various socket APIs. Even though these paths may seem orthogonal, they are not necessarily mutually exclusive.</p><a name="//apple_ref/doc/uid/TP40007301-CH1-SW6" title="Downloading Resources Using URLs"></a><h4>Downloading Resources Using URLs</h4><p>The Core Foundation URL Access Utilities (CFURL), and the NSURL API built on top of them, provide an easy way to download single files or other resources from web servers and FTP servers.</p><ul><li><p>The <code>CFURL</code> C-based APIs are part of the Core Foundation framework. You can learn more about them in <span class="content_text"><a href="../../../documentation/CoreFoundation/Reference/CFURLRef/Reference/reference.html#//apple_ref/doc/uid/20001206" target="_self">CFURL Reference</a></span>.</p></li><li><p>The <code>NSURL</code> Objective-C-based APIs are part of the Foundation framework. You can learn more about them in <span class="content_text"><a href="../../../documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/Reference/Reference.html#//apple_ref/doc/uid/20000301" target="_self">NSURL Class Objective-C Reference</a></span>.</p></li></ul><a name="//apple_ref/doc/uid/TP40007301-CH1-SW7" title="Interacting with Web and File Servers Using HTTP and FTP Streams"></a><h4>Interacting with Web and File Servers Using HTTP and FTP Streams</h4><p>If your application needs to interact with a web server or an FTP server beyond the capabilities provided by a CFURL or NSURL, you should consider using the CFHTTPStream and CFFTPStream APIs. These provide support for complex HTTP and FTP requests such as HTTP GET and POST requests, HTTP cookie and request header management, FTP directory reads, and FTP file uploading.</p><p>To learn about these APIs in general, read <span class="content_text"><a href="../../../documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132" target="_self">CFNetwork Programming Guide</a></span>. For detailed API documentation, read <span class="content_text"><a href="../../../documentation/CoreFoundation/Reference/CFHTTPStreamRef/Reference/reference.html#//apple_ref/doc/uid/TP40003363" target="_self">CFHTTPStream Reference</a></span> and <span class="content_text"><a href="../../../documentation/CoreFoundation/Reference/CFFTPStreamRef/Reference/reference.html#//apple_ref/doc/uid/TP40003359" target="_self">CFFTPStream Reference</a></span>.</p><a name="//apple_ref/doc/uid/TP40007301-CH1-SW8" title="Communicating Using Sockets"></a><h4>Communicating Using Sockets</h4><p>If your application uses sockets, iOS provides run-loop socket integration APIs in Core Foundation, as well as direct access to the BSD sockets on which these are built.</p><ul><li><p>If you’ve designed a networking application for Mac OS X and want to write a networking application for iOS, you can use the same networking APIs.</p><p>If you’ve decided to work with the CFNetwork APIs at a socket level, you should read <span class="content_text"><a href="../../../documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132" target="_self">CFNetwork Programming Guide</a></span> and <span class="content_text"><a href="../../../documentation/CFNetwork/Reference/CFNetwork_Framework/_index.html#//apple_ref/doc/uid/TP40007128" target="_self">CFNetwork Framework Reference</a></span>.</p></li><li><p>Although BSD (POSIX) networking APIs are available in iOS, you should avoid using them. If you communicate directly with sockets, certain networking capabilities of iOS, such as VPN On Demand, do not work. Use the APIs provided in <span class="content_text"><a href="../../../documentation/CoreFoundation/Reference/CFSocketStreamRef/Reference/reference.html#//apple_ref/doc/uid/TP40003412" target="_self">CFStream Socket Additions</a></span> instead.</p><p>To learn about BSD (POSIX) networking, read the <span class="content_text"><a href="http://www.developerweb.net/forum/" class="urlLink" rel="external">UNIX Socket FAQ</a></span> website for code examples and general information. For API details, read <code>socket(2)</code> in the <span class="content_text"><a href="https://developer.apple.com/library/ios/documentation/System/Conceptual/ManPages_iPhoneOS/index.html#//apple_ref/doc/uid/TP40007259" target="_self" class="urlLink">iOS Manual Pages</a></span>.</p></li></ul><a name="//apple_ref/doc/uid/TP40007301-CH1-SW5" title="Registering and Discovering Network Services"></a><h4>Registering and Discovering Network Services</h4><p>You can register a network service or discover a network service using Bonjour. To do this, use either the C-based CFNetServices or the Objective-C-based NSNetServices API.</p><p>These APIs are described in <span class="content_text"><a href="../../../documentation/Networking/Conceptual/NSNetServiceProgGuide/Introduction.html#//apple_ref/doc/uid/TP40002736" target="_self">NSNetServices and CFNetServices Programming Guide</a></span>. For detailed API documentation, read <span class="content_text"><a href="../../../documentation/CoreFoundation/Reference/CFNetServiceRef/Reference/reference.html#//apple_ref/doc/uid/TP40003365" target="_self">CFNetServices Reference</a></span> and <span class="content_text"><a href="../../../documentation/Cocoa/Reference/Foundation/Classes/NSNetService_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003698" target="_self">NSNetService Class Reference</a></span> for, respectively, the CFNetwork and Foundation forms of this API.</p>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2009 Apple Inc. All Rights Reserved. &#40;Last updated: 2009-11-17&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGS_Networking_iPhone%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007301-1.2&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGS_Networking_iPhone%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007301-1.2&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGS_Networking_iPhone%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007301-1.2&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/tasks.js"></script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+                    
+<html lang="en-us">
+<head>
+    <title>Core OS Layer</title>
+    <meta id="xcode-display" name="xcode-display" content="render" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script>
+        function listen(elem, evnt, func) {
+          if (elem.addEventListener){
+            elem.addEventListener(evnt,func,false);
+          } else if (elem.attachEvent) {
+            var r = elem.attachEvent("on"+evnt, func);
+            return r;
+          }
+        }
+        listen(window, 'load', function(evt){ 
+          window.location.href = "../index.html#section=Frameworks&topic=Core%20OS%20Layer";
+        });
+    </script>
+</head>
+<body style="display: none">        <a name="//apple_ref/doc/uid/TP40008038" title="Core OS Layer"></a>Manage the virtual memory system, threads, the file system, the network, and interprocess communication with the frameworks in the Core OS layer. This layer encompasses the kernel environment, drivers, and basic interfaces of iOS. The drivers at this layer also provide the interface between the available hardware and the system frameworks that vend hardware features. Use the frameworks in this layer if those in the upper layers aren't sufficient for your needs.</body>
+</html>

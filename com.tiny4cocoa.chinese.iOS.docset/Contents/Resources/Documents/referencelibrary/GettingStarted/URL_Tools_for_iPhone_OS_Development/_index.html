@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tools for iOS Development</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Getting Started">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40007593">
+    <meta id="date" name="date" content="2010-07-08">
+    <meta id="description" name="description" content="Provides an overview of the tools used to develop iPhone applications.">
+    <meta id="book-title" name="book-title" content="Tools for iOS Development">
+    <meta id="book-root" name="book-root" content="./">
+    <meta id="book-json" name="book-json" content="book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Getting Started}, {Topic/General}">
+    
+    
+    <meta id="generator" name="generator" content="Gutenberg 26977M">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Tools for iOS Development">
+    <meta id="resources-uri" name="resources-uri" content="../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="Tools for iOS Development" type="text/html" href="index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ie.css"><![endif]-->
+    <link rel='stylesheet' type='text/css' href='../../../Resources/565/CSS/gettingstarted.css' />
+<link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40007593" title="Tools for iOS Development"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40007593-CH1-SW1" title="Tools for iOS Development"></a><h2>Tools for iOS Development</h2><p>To develop applications for iOS, you need a Mac OS X computer running the Xcode tools. (You can download Xcode from <span class="content_text"><a href="http://developer.apple.com/technologies/xcode.html" class="browserLink" >this page</a></span>.) Xcode is Apple’s suite of development tools that provide support for project management, code editing, building executables, source-level debugging, source-code repository management, performance tuning, and much more. At the center of this suite is the Xcode application itself, which provides the basic source-code development environment. Xcode is not the only tool you use though, and the following sections provide an introduction to the applications you use to create iOS applications.</p><a name="//apple_ref/doc/uid/TP40007593-CH1-SW3" title="Xcode"></a><h3>Xcode</h3><p>The focus of your development experiences is the Xcode application. Xcode is an integrated development environment (IDE) that provides all of the tools you need to create and manage your iOS projects and source files, build your code into an executable, and run and debug your code either in iOS Simulator or on a device.</p><p>To create a new iOS application, you start by creating a new project in Xcode. A project manages all of the information associated with your application, including the source files, build settings, and rules needed to put all of the pieces together. The heart of every Xcode project is the project window, shown in Figure 1. This window provides quick access to all of the key elements of your application. The Groups and Files list is where you manage the files in your project, including your source files and the build targets that are created from those source files. The toolbar provides access to commonly used tools and commands while the details pane provides a configurable space for working on your project. Other aspects of the project window provide you with contextual information about your project.</p><br><a name="//apple_ref/doc/uid/TP40007593-CH1-SW4" title="Figure 1An Xcode project window"></a><figcaption><strong class="caption_number">Figure 1</strong>&nbsp;&nbsp;An Xcode project window</figcaption><img src="Art/project_window.png" alt="" width="600" height="362"><br><p>Xcode comes with an advanced text editor, which supports features such as code completion, syntax coloring, code folding (to hide code blocks temporarily), and inline annotations for errors, warnings, and notes. The build system in Xcode provides both appropriate default settings and the ability to configure the environment to your heart’s content. And if you need documentation, the Research Assistant provides context-sensitive documentation while the Xcode documentation window lets you browse and search for information.</p><p>When you build your application in Xcode, you have a choice of building it for iOS Simulator or for a device. The simulator provides a local environment for testing your applications to make sure they behave essentially the way you want. After you are satisfied with your application’s basic behavior, you can tell Xcode to build it and run it on an iOS-based device connected to your computer. Running on a device provides the ultimate test environment, and Xcode lets you attach the built-in debugger to the code running on the device.</p><br><a name="//apple_ref/doc/uid/TP40007593-CH1-SW5" title="Figure 2Running a project from Xcode"></a><figcaption><strong class="caption_number">Figure 2</strong>&nbsp;&nbsp;Running a project from Xcode</figcaption><img src="Art/simulator.jpg" alt="" width="573" height="494"><br><p>For details on how to build and run your project on iOS, see <span class="content_text"><a href="../../../documentation/Xcode/Conceptual/iphone_development/000-Introduction/introduction.html#//apple_ref/doc/uid/TP40007959" target="_self">iOS Development Guide</a></span>.</p><a name="//apple_ref/doc/uid/TP40007593-CH1-SW6" title="Interface Builder"></a><h3>Interface Builder</h3><p>Interface Builder is the tool you use to assemble your application’s user interface visually. Using Interface Builder, you assemble your application’s window by dragging and dropping preconfigured components onto it. The components include standard system controls such as switches, text fields, and buttons, and also custom views to represent the views your application provides. After you’ve placed the components on the window’s surface, you can position them by dragging them around, configure their attributes using the inspector, and establish the relationships between those objects and your code. When your interface looks the way you want it, you save the contents to a nib file, which is a custom resource file format.</p><br><a name="//apple_ref/doc/uid/TP40007593-CH1-SW7" title="Figure 3Designing your interface with Interface Builder"></a><figcaption><strong class="caption_number">Figure 3</strong>&nbsp;&nbsp;Designing your interface with Interface Builder</figcaption><img src="Art/interface_builder.jpg" alt="" width="600" height="463"><br><p>The nib files you create in Interface Builder contain all the information that the UI Kit needs to recreate the same objects in your application at runtime. Loading a nib file creates runtime versions of all the objects stored in the file, configuring them exactly as they were in Interface Builder. It also uses the connection information you specified to establish connections between the newly created objects and any existing objects in your application. These connections provide your code with pointers to the nib-file objects and also provide the information the objects themselves need to communicate user actions to your code.</p><p>Overall, using Interface Builder saves a tremendous amount of time when it comes to creating your application’s user interface. Interface Builder eliminates the custom code needed to create, configure, and position the objects that make up your interface. Because it is a visual editor, you get to see exactly what your interface will look like at runtime.</p><p>For information on how to use Interface Builder, see <span class="content_text"><!--a target="_self" -->Interface Builder User Guide<!--/a--></span>.</p><a name="//apple_ref/doc/uid/TP40007593-CH1-SW8" title="Instruments"></a><h3>Instruments</h3><p>To ensure that you deliver the best user experience for your software, the Instruments environment lets you analyze the performance of your iOS applications while running in the simulator or on a device. Instruments gathers data from your running application and presents that data in a graphical display called the timeline. You can gather data about your application’s memory usage, disk activity, network activity, and graphics performance. The timeline view can display all of the different types of information side by side, letting you correlate the overall behavior of your application, not just the behavior in one specific area. To get even more detailed information, you can also view the detailed samples that Instruments gathers.</p><br><a name="//apple_ref/doc/uid/TP40007593-CH1-SW9" title="Figure 4Using Instruments to tune your application"></a><figcaption><strong class="caption_number">Figure 4</strong>&nbsp;&nbsp;Using Instruments to tune your application</figcaption><img src="Art/Instruments.jpg" alt="" width="568" height="478"><br><p>In addition to providing the timeline view, Instruments provides tools to help you analyze your application’s behavior over time. For example, the Instruments window lets you store data from multiple runs so that you can see whether your application’s behavior is actually improving or whether it still needs work. You can save the data from these runs in an Instruments document and open them at any time.</p><p>For details on how to use Instruments with iOS applications, see iOS Development Guide. For general information on how to use Instruments, see <span class="content_text"><a href="../../../documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004652" target="_self">Instruments User Guide</a></span>.</p>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2010 Apple Inc. All Rights Reserved. &#40;Last updated: 2010-07-08&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_Tools_for_iPhone_OS_Development%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007593-2.1&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_Tools_for_iPhone_OS_Development%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007593-2.1&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FURL_Tools_for_iPhone_OS_Development%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40007593-2.1&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/tasks.js"></script>
+</html>

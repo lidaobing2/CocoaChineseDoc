@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an immutable collection of key-value pairs.","revisionSummary":"Last change: Noted that dictionaryWithObject:forKey: does not accept nil parameters.","url":"../../documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003648","dataFile":false}

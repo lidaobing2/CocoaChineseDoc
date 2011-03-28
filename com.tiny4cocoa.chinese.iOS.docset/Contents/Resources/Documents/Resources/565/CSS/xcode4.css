@@ -1,0 +1,35 @@
+/*! Copyright © 2010 Apple Inc.  All rights reserved. */
+
+/*  Custom CSS changes for Xcode 4  */ 
+
+#header, #header.noADC {
+    display: none;
+}
+
+#breadcrumbs {
+    display: none;
+}
+
+#contents, #contents.noADC, #contents.noHeaderButtons, #contents.noHeaderButtons.noADC {
+    top: 0px;
+    bottom: 0px;
+    border-top: 0px;
+}
+
+#contents.isShowingTOC {
+    left: 0px;
+    min-width: 0px;
+}
+
+#tocContainer.isShowingTOC {
+    display:none;
+}
+
+
+#StaticPage #contents, #StaticPage #contents.noADC {
+    top: 0px;
+}
+
+#StaticPage #header {
+    height: 0px;
+}

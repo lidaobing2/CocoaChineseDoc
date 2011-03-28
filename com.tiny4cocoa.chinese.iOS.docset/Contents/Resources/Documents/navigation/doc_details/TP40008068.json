@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for receiving playback state messages.","revisionSummary":"Last change: Updated for iOS 4.0 by adding a description for the audioPlayerEndInterruption:withFlags: method.","url":"../../documentation/AVFoundation/Reference/AVAudioPlayerDelegateProtocolReference/Reference/Reference.html#//apple_ref/doc/uid/TP40008068","dataFile":false}

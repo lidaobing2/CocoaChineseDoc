@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+                    
+<html lang="en-us">
+<head>
+    <title>EventKit</title>
+    <meta id="xcode-display" name="xcode-display" content="render" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script>
+        function listen(elem, evnt, func) {
+          if (elem.addEventListener){
+            elem.addEventListener(evnt,func,false);
+          } else if (elem.attachEvent) {
+            var r = elem.attachEvent("on"+evnt, func);
+            return r;
+          }
+        }
+        listen(window, 'load', function(evt){ 
+          window.location.href = "../index.html#section=Frameworks&topic=EventKit";
+        });
+    </script>
+</head>
+<body style="display: none">        <a name="//apple_ref/doc/uid/TP40009695" title="EventKit"></a>Read and write calendar data with the Event Kit framework.</body>
+</html>

@@ -1,0 +1,2 @@
+
+{"shortOverview":"QA1702: Shows how to capture video frames from the camera as images using AV Foundation","revisionSummary":"Last change: Updated the imageFromSampleBuffer code to correctly create a UIImage from the sample buffer data.","url":"../../qa/qa2010/qa1702.html#//apple_ref/doc/uid/DTS40010192","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a voice channel used by players to communicate with each other.","revisionSummary":"Last change: Edited for readability. Clarified that the player state update handler is called for the local player. Wi-fi and a microphone are required to use voice chat.","url":"../../documentation/GameKit/Reference/GKVoiceChat_Ref/Reference/Reference.html#//apple_ref/doc/uid/TP40009602","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an object you use to process uncompressed frames from a video being captured, or to access compressed frames.","revisionSummary":"Last change: Updated discussion of setSampleBufferDelegate:queue: and videoSettings.","url":"../../documentation/AVFoundation/Reference/AVCaptureVideoDataOutput_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40009544","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for managing the actions and timing of an animation.","revisionSummary":"Last change: Added a warning to the setDelegate: method about retain cycles.","url":"../../documentation/GraphicsImaging/Reference/CAAnimation_class/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004494","dataFile":false}

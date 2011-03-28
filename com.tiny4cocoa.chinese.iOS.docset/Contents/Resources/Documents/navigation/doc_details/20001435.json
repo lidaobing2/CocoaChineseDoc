@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an immutable ordered collection containing bit values.","revisionSummary":"Last change: Clarified the return value of CFBitVectorGetFirstIndexOfBit and CFBitVectorGetLastIndexOfBit.","url":"../../documentation/CoreFoundation/Reference/CFBitVectorRef/Reference/reference.html#//apple_ref/doc/uid/20001435","dataFile":false}

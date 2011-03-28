@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a representation of an image.","revisionSummary":"Last change: Clarified that the decode matrix must also include entries for the alpha channel, if one is present.","url":"../../documentation/GraphicsImaging/Reference/CGImage/Reference/reference.html#//apple_ref/doc/uid/TP30000956","dataFile":false}

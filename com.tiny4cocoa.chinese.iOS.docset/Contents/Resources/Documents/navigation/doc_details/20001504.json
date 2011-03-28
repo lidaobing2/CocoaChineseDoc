@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutable character string.","revisionSummary":"Last change: Added explanation of the effect of the locale argument on CFStringLowercase, CFStringUppercase, and CFStringFold functions.","url":"../../documentation/CoreFoundation/Reference/CFMutableStringRef/Reference/reference.html#//apple_ref/doc/uid/20001504","dataFile":false}

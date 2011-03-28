@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a grouping of multiple animations into a single animation.","revisionSummary":"Last change: Clarified that the animations grouped within a CAAnimationGroup do not get delegate messages, but that the group does.","url":"../../documentation/GraphicsImaging/Reference/CAAnimationGroup_class/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004495","dataFile":false}

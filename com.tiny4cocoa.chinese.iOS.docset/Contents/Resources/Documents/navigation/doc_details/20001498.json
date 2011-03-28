@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutable byte buffer.","revisionSummary":"Last change: Clarified capacity argument in CFDataCreateMutable and CFDataCreateMutableCopy.","url":"../../documentation/CoreFoundation/Reference/CFMutableDataRef/Reference/reference.html#//apple_ref/doc/uid/20001498","dataFile":false}

@@ -1,0 +1,2 @@
+
+{"shortOverview":"Demonstrates basic use of MapKit, displaying a map view and setting its region to current location.","revisionSummary":"Last change: Upgraded to iOS 4.2 SDK, now using &quot;mapView:didUpdateUserLocation:userLocation&quot; to enable showing the user's address.","url":"../../samplecode/CurrentAddress/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009469","dataFile":false}

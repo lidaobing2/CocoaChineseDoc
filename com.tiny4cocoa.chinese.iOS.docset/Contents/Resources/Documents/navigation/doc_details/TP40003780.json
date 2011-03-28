@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for accessing object properties indirectly by key name or key path.","revisionSummary":"Last change: Clarified setValue:forKey: and memory management.","url":"../../documentation/Cocoa/Reference/Foundation/Protocols/NSKeyValueCoding_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003780","dataFile":false}

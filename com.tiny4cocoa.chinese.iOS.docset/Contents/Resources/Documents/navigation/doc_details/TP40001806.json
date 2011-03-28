@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes NSError objects, related Application Kit support for error handling, and how to use these features in your code.","revisionSummary":"Last change: Added advice about not modifying the error parameter if a method does not directly return NO to indicate an error (Creating and Returning NSError Objects).","url":"../../documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806","dataFile":false}

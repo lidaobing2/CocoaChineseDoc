@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a representation of a native network socket; does nothing in Mac OS X.","revisionSummary":"Last change: Corrected declarations of kCFSocketRegisterCommand and kCFSocketRetrieveCommand.","url":"../../documentation/CoreFoundation/Reference/CFSocketNameServerUtils/Reference/reference.html#//apple_ref/doc/uid/20001451","dataFile":false}

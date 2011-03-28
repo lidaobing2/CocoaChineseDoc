@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes a mutable ordered collection containing bit values.","revisionSummary":"Last change: Clarified capacity argument in CFBitVectorCreateMutable and CFBitVectorCreateMutableCopy.","url":"../../documentation/CoreFoundation/Reference/CFMutableBitVectorRef/Reference/reference.html#//apple_ref/doc/uid/20001500","dataFile":false}

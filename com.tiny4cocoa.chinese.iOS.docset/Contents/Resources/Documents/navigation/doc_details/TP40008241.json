@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for receiving audio context and audio hardware state messages.","revisionSummary":"Last change: Updated for iOS 4.0 by adding a description for the endInterruptionWithFlags: delegate method.","url":"../../documentation/AVFoundation/Reference/AVAudioSessionDelegate_ProtocolReference/Reference/Reference.html#//apple_ref/doc/uid/TP40008241","dataFile":false}

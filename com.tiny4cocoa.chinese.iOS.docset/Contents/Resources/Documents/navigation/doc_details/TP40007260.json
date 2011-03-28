@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the SCNetworkReachability API, which helps an application get network configuration status and determine the reachability of targets.","revisionSummary":"Last change: Describes the kSCNetworkReachabilityFlagsConnectionAutomatic reachability flag and fixes some formatting issues.","url":"../../documentation/SystemConfiguration/Reference/SCNetworkReachabilityRef/Reference/reference.html#//apple_ref/doc/uid/TP40007260","dataFile":false}

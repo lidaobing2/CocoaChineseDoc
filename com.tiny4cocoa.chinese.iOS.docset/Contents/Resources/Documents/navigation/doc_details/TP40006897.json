@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for receiving editing-related delegate messages in UITextView objects.","revisionSummary":"Last change: Updated the textViewDidChange: method description to indicate when it is called.","url":"../../documentation/UIKit/Reference/UITextViewDelegate_Protocol/Reference/UITextViewDelegate.html#//apple_ref/doc/uid/TP40006897","dataFile":false}

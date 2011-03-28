@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for responding to map changes.","revisionSummary":"Last change: Updated the mapView:didUpdateUserLocation: method discussion to reflect multitasking behavior.","url":"../../documentation/MapKit/Reference/MKMapViewDelegate_Protocol/MKMapViewDelegate/MKMapViewDelegate.html#//apple_ref/doc/uid/TP40008204","dataFile":false}

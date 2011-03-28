@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Foundation Framework Reference</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Reference">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/20001091">
+    <meta id="date" name="date" content="2010-05-20">
+    <meta id="description" name="description" content="Describes the Foundation framework API.">
+    <meta id="book-title" name="book-title" content="Foundation Framework Reference">
+    <meta id="book-root" name="book-root" content="./">
+    <meta id="book-json" name="book-json" content="book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Reference}, {Framework/Core Services Layer/Foundation}">
+    <meta name="pdf" contents="./FoundationObjC.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="./FoundationObjC.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 27000">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Foundation Framework Reference">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="Foundation Framework Reference" type="text/html" href="index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../../../Resources/565/CSS/ie.css"><![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="../../../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/20001091" title="Foundation Framework Reference"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="index.html" style="display:none;"></a>
+        
+        
+<div>
+    
+<div class="collection_title">
+        <h1 class="collections">Foundation Framework Reference</h1>
+		
+			 
+			
+			
+			<p>The Foundation framework defines a base layer of Objective-C classes. In addition to providing a set of useful primitive object classes, it introduces several paradigms that define functionality not covered by the Objective-C language. The Foundation framework is designed with these goals in mind:</p><ul class="ul"><li class="li"><p>Provide a small set of basic utility classes.</p></li>
+<li class="li"><p>Make software development easier by introducing consistent conventions for things such as deallocation.</p></li>
+<li class="li"><p>Support Unicode strings, object persistence, and object distribution.</p></li>
+<li class="li"><p>Provide a level of OS independence, to enhance portability.</p></li></ul><p>The Foundation framework includes the root object class, classes representing basic data types such as strings and byte arrays, collection classes for storing other objects, classes representing system information such as dates, and classes representing communication ports. See <span class="content_text"><a href="Intro/IntroFoundation.html#//apple_ref/doc/uid/20000687-25735">Figure I-1</a></span> for a list of those classes that make up the Foundation framework.</p><span><a href="Intro/IntroFoundation.html#//apple_ref/doc/uid/20000687-BAJDAJAG"> [More]</a></span>
+			
+			
+		
+</div><br/>
+                <div class="spec_sheet_info_box"><table cellspacing="0" class="specbox">
+                    
+                    
+                        
+                            <tr><td scope="row"><strong><span class="FrameworkPath">Framework</span></strong></td><td><div class="zSharedSpecBoxHeadList">/System/Library/Frameworks/Foundation.framework</div></td></tr>
+                        
+                        
+                            <tr><td scope="row"><strong><span class="HeaderFileDirectory">Header file directories</span></strong></td><td><div class="zSharedSpecBoxHeadList">/System/Library/Frameworks/Foundation.framework/Headers</div></td></tr>
+                        
+                    
+                    
+                    
+                        
+                            <tr><td scope="row"><strong><span class="HTML-Related-Documents">Companion guides</span></strong></td><td><div class="zSharedSpecBoxHeadList">
+                            
+                                <span class="content_text"><a href="../../../Conceptual/CocoaFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002974">Cocoa Fundamentals Guide</a></span><br/>
+                            
+                                <span class="content_text"><a href="../../../../../releasenotes/Cocoa/Foundation.html#//apple_ref/doc/uid/TP30000742">Foundation Release Notes</a></span><br/>
+                            
+                            </div></td></tr>
+                        
+                    
+                </table></div>
+
+                <p class="clear"></p><div width="100%">
+                    <div class="collectionColumn1"><ol class="collectionColumn">
+                    
+                    
+                        <div class="collectionHead">Class References</div>
+                        
+                            <li class="forums"><a href="../Classes/NSArray_Class/NSArray.html#//apple_ref/doc/uid/TP40003620">                                 NSArray                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSAssertionHandler_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003621">                                 NSAssertionHandler                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSAttributedString_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003622">                                 NSAttributedString                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSAutoreleasePool_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003623">                                 NSAutoreleasePool                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSBlockOperation_class/Reference/Reference.html#//apple_ref/doc/uid/TP40008157">                                 NSBlockOperation                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSBundle_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003624">                                 NSBundle                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSCache_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008976">                                 NSCache                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCachedURLResponse_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003625">                                 NSCachedURLResponse                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCalendar_Class/Reference/NSCalendar.html#//apple_ref/doc/uid/TP40003626">                                 NSCalendar                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCharacterSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003628">                                 NSCharacterSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCoder_Class/Reference/NSCoder.html#//apple_ref/doc/uid/TP40003632">                                 NSCoder                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSComparisonPredicate_Class/Reference/NSComparisonPredicate.html#//apple_ref/doc/uid/TP40003633">                                 NSComparisonPredicate                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCompoundPredicate_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003634">                                 NSCompoundPredicate                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSCondition_class/Reference/Reference.html#//apple_ref/doc/uid/TP40004593">                                 NSCondition                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSConditionLock_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003635">                                 NSConditionLock                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSCountedSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003638">                                 NSCountedSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSData_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003640">                                 NSData                             </a></li>
+                        
+                            <li class="forums"><a href="../../../../Foundation/Reference/NSDataDetector_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40009936">                                 NSDataDetector                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDate_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003641">                                 NSDate                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDateComponents_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003642">                                 NSDateComponents                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDateFormatter_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003643">                                 NSDateFormatter                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDecimalNumber_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003644">                                 NSDecimalNumber                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDecimalNumberHandler_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003645">                                 NSDecimalNumberHandler                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDictionary_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003648">                                 NSDictionary                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSDirectoryEnumerator_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003649">                                 NSDirectoryEnumerator                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSEnumerator_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003654">                                 NSEnumerator                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSError_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003655">                                 NSError                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSException_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003656">                                 NSException                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSExpression_Class/Reference/NSExpression.html#//apple_ref/doc/uid/TP40003658">                                 NSExpression                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSFileHandle_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003659">                                 NSFileHandle                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSFileManager_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003660">                                 NSFileManager                             </a></li>
+                        
+                            <li class="forums"><a href="../../ApplicationKit/Classes/NSFileWrapper_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40004040">                                 NSFileWrapper                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSFormatter_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003661">                                 NSFormatter                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSHTTPCookie_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003664">                                 NSHTTPCookie                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSHTTPCookieStorage_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003665">                                 NSHTTPCookieStorage                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSHTTPURLResponse_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003666">                                 NSHTTPURLResponse                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSIndexPath_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003667">                                 NSIndexPath                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSIndexSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003668">                                 NSIndexSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSInputStream_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003670">                                 NSInputStream                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSInvocation_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003671">                                 NSInvocation                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSInvocationOperation_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40005505">                                 NSInvocationOperation                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSKeyedArchiver_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003672">                                 NSKeyedArchiver                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSKeyedUnarchiver_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003673">                                 NSKeyedUnarchiver                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSLocale_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003674">                                 NSLocale                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSLock_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003675">                                 NSLock                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMachPort_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003678">                                 NSMachPort                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMessagePort_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003679">                                 NSMessagePort                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMethodSignature_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003685">                                 NSMethodSignature                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableArray_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003688">                                 NSMutableArray                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableAttributedString_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003689">                                 NSMutableAttributedString                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableCharacterSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003690">                                 NSMutableCharacterSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableData_Class/Reference/NSMutableData.html#//apple_ref/doc/uid/TP40003691">                                 NSMutableData                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableDictionary_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003692">                                 NSMutableDictionary                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableIndexSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003693">                                 NSMutableIndexSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableSet_Class/Reference/NSMutableSet.html#//apple_ref/doc/uid/TP40003694">                                 NSMutableSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableString_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003695">                                 NSMutableString                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSMutableURLRequest_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003696">                                 NSMutableURLRequest                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNetService_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003698">                                 NSNetService                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNetServiceBrowser_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003699">                                 NSNetServiceBrowser                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNotification_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003700">                                 NSNotification                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNotificationCenter_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003701">                                 NSNotificationCenter                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNotificationQueue_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003702">                                 NSNotificationQueue                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNull_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003703">                                 NSNull                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNumber_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003704">                                 NSNumber                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSNumberFormatter_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003705">                                 NSNumberFormatter                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSObject_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003706">                                 NSObject                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSOperation_class/Reference/Reference.html#//apple_ref/doc/uid/TP40004591">                                 NSOperation                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSOperationQueue_class/Reference/Reference.html#//apple_ref/doc/uid/TP40004592">                                 NSOperationQueue                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSOrthography_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008774">                                 NSOrthography                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSOutputStream_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003707">                                 NSOutputStream                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSPipe_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003708">                                 NSPipe                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSPort_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003709">                                 NSPort                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSPredicate_Class/Reference/NSPredicate.html#//apple_ref/doc/uid/TP40003714">                                 NSPredicate                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSProcessInfo_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003715">                                 NSProcessInfo                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSPropertyListSerialization_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003716">                                 NSPropertyListSerialization                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSProxy_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003719">                                 NSProxy                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSPurgeableData_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008981">                                 NSPurgeableData                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSRecursiveLock_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003723">                                 NSRecursiveLock                             </a></li>
+                        
+                            <li class="forums"><a href="../../../../Foundation/Reference/NSRegularExpression_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40009708">                                 NSRegularExpression                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSRunLoop_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003725">                                 NSRunLoop                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSScanner_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003726">                                 NSScanner                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSSet_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003736">                                 NSSet                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSSortDescriptor_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003740">                                 NSSortDescriptor                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSStream_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003743">                                 NSStream                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSString_Class/Reference/NSString.html#//apple_ref/doc/uid/TP40003744">                                 NSString                             </a></li>
+                        
+                            <li class="forums"><a href="../../../../AppKit/Reference/NSTextCheckingResult_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40008798">                                 NSTextCheckingResult                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSThread_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003746">                                 NSThread                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSTimer_Class/Reference/NSTimer.html#//apple_ref/doc/uid/TP40003747">                                 NSTimer                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSTimeZone_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003748">                                 NSTimeZone                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSUndoManager_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003750">                                 NSUndoManager                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURL_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003752">                                 NSURL                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLAuthenticationChallenge_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003753">                                 NSURLAuthenticationChallenge                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLCache_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003754">                                 NSURLCache                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLConnection_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003755">                                 NSURLConnection                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLCredential_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003756">                                 NSURLCredential                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLCredentialStorage_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003757">                                 NSURLCredentialStorage                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLProtectionSpace_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003760">                                 NSURLProtectionSpace                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLProtocol_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003761">                                 NSURLProtocol                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLRequest_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003762">                                 NSURLRequest                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSURLResponse_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003763">                                 NSURLResponse                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSUserDefaults_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003764">                                 NSUserDefaults                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSValue_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003765">                                 NSValue                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSValueTransformer_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003766">                                 NSValueTransformer                             </a></li>
+                        
+                            <li class="forums"><a href="../Classes/NSXMLParser_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40003773">                                 NSXMLParser                             </a></li>
+                        
+                    
+                    </ol></div>
+                
+                    <div class="collectionColumn2"><ol class="collectionColumn">
+                    
+                    
+                        <div class="collectionHead">Protocol References</div>
+                        
+                            <li class="forums"><a href="../../NSCacheDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008980">                                 NSCacheDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSCoding_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003775">                                 NSCoding                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSCopying_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003777">                                 NSCopying                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSDecimalNumberBehaviors_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003778">                                 NSDecimalNumberBehaviors                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSDiscardableContent_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008982">                                 NSDiscardableContent                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSErrorRecoveryAttempting_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003779">                                 NSErrorRecoveryAttempting                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSFastEnumeration_protocol/Reference/NSFastEnumeration.html#//apple_ref/doc/uid/TP40004559">                                 NSFastEnumeration                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSKeyedArchiverDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008600">                                 NSKeyedArchiverDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSKeyedUnarchiverDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008601">                                 NSKeyedUnarchiverDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSKeyValueCoding_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003780">                                 NSKeyValueCoding                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSKeyValueObserving_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003781">                                 NSKeyValueObserving                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSLocking_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003782">                                 NSLocking                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSMachPortDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008603">                                 NSMachPortDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSMutableCopying_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003783">                                 NSMutableCopying                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSNetServiceBrowserDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008607">                                 NSNetServiceBrowserDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSNetServiceDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008608">                                 NSNetServiceDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSObject_Protocol/Reference/NSObject.html#//apple_ref/doc/uid/TP40003785">                                 NSObject                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSPortDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008610">                                 NSPortDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSStreamDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008621">                                 NSStreamDelegate                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSURLAuthenticationChallengeSender_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003789">                                 NSURLAuthenticationChallengeSender                             </a></li>
+                        
+                            <li class="forums"><a href="../Protocols/NSURLProtocolClient_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40003792">                                 NSURLProtocolClient                             </a></li>
+                        
+                            <li class="forums"><a href="../../NSXMLParserDelegate_Protocol/Reference/Reference.html#//apple_ref/doc/uid/TP40008632">                                 NSXMLParserDelegate                             </a></li>
+                        
+                    
+                    </ol></div>
+                
+                    <div class="collectionColumn3"><ol class="collectionColumn">
+                    
+                    
+                        <div class="collectionHead">Other References</div>
+                        
+                            <li class="forums"><a href="../Miscellaneous/Foundation_Functions/Reference/reference.html#//apple_ref/doc/uid/TP40003774">                                 Foundation Functions                             </a></li>
+                        
+                            <li class="forums"><a href="../Miscellaneous/Foundation_DataTypes/Reference/reference.html#//apple_ref/doc/uid/TP40003794">                                 Foundation Data Types                             </a></li>
+                        
+                            <li class="forums"><a href="../Miscellaneous/Foundation_Constants/Reference/reference.html#//apple_ref/doc/uid/TP40003793">                                 Foundation Constants                             </a></li>
+                        
+                    
+                    
+                                         
+
+                    <div class="collectionHead">&#160;</div>
+                    
+                    
+                    
+                            <li class="forums">
+                            <a href="History/History.html#//apple_ref/doc/uid/20001091-RH1-SW1">                                 Revision&#160;History                             </a>
+                            </li>
+                </ol></div>
+
+        
+
+                        
+                        
+                </div><p class="clear"></p>
+</div>
+
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 1997, 2010 Apple Inc. All Rights Reserved. &#40;Last updated: 2010-05-20&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Fdocumentation%2FCocoa%2FReference%2FFoundation%2FObjC_classic%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3D20001091-9.2&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../../../Resources/565/JavaScript/book.js"></script>
+</html>

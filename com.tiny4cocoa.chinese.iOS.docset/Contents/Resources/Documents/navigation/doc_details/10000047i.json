@@ -1,0 +1,2 @@
+
+{"shortOverview":"Explains how to put Cocoa objects into and remove them from a representation suitable for archiving.","revisionSummary":"Last change: Added note for customizing unarchival of archives created using archiveRootObject:toFile:.","url":"../../documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i","dataFile":false}

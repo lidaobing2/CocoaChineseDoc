@@ -1,0 +1,2 @@
+
+{"shortOverview":"QA1509: Describes how to access the pixel data of a CGImage object","revisionSummary":"Last change: Updated to refer to CGDataProviderCopyData(), available as of Mac OS X 10.5.","url":"../../qa/qa2007/qa1509.html#//apple_ref/doc/uid/DTS10004216","dataFile":false}

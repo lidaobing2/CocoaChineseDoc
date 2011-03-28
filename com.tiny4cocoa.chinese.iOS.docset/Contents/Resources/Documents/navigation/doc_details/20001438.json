@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an object that sends notifications to registered observers.","revisionSummary":"Last change: Noted constraints on object parameter to CFNotificationCenterPostNotification() and on numerous functions when used with a Darwin notification center.","url":"../../documentation/CoreFoundation/Reference/CFNotificationCenterRef/Reference/reference.html#//apple_ref/doc/uid/20001438","dataFile":false}

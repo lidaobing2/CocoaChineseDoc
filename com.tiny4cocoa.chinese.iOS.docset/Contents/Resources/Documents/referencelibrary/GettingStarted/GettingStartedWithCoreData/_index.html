@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting Started with Core Data: Introduction</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Getting Started">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"")+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40005316">
+    <meta id="date" name="date" content="2009-09-09">
+    <meta id="description" name="description" content="Describes a roadmap for learning Core Data.">
+    <meta id="book-title" name="book-title" content="Getting Started with Core Data">
+    <meta id="book-root" name="book-root" content="./">
+    <meta id="book-json" name="book-json" content="book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Getting Started}, {Framework/Core Services Layer/CoreData}, {Topic/Data Management}">
+    
+    
+    <meta id="generator" name="generator" content="Gutenberg 26977M">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2011 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Introduction">
+    <meta id="resources-uri" name="resources-uri" content="../../../Resources/565">
+    <link id="book-index-page" rel="Start" title="Getting Started with Core Data" type="text/html" href="index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/ie.css"><![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="../../../Resources/565/CSS/xcode4.css" charset="utf-8">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40005316" title="Introduction"></a>
+    <article id="contents" tabindex="0" role="main">
+        <!-- CONTENTS -->
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40005316-CH1-SW1" title="Introduction"></a><h2>Introduction</h2><a name="//apple_ref/doc/uid/TP40005316-CH1-SW4" title="What is Core Data?"></a><h3>What is Core Data?</h3><p>The Core Data framework provides solutions to common tasks associated with object life-cycle and object graph management, including persistence. Its features include: </p><ul><li><p>Built-in management of undo and redo beyond basic text editing </p></li><li><p>Automatic validation of property values to ensure that individual values lie within acceptable ranges and that combinations of values make sense </p></li><li><p>Change propagation, including maintaining the consistency of relationships among objects </p></li><li><p>Grouping, filtering, and organizing data in memory and in the user interface </p></li><li><p>Automatic support for storing objects in external data repositories </p></li></ul><a name="//apple_ref/doc/uid/TP40005316-CH1-SW3" title="Prerequisites"></a><h3>Prerequisites</h3><p>Core Data is not an entry-level technology. It leverages many other Cocoa technologies and design patterns. <em>You must understand these technologies and patterns before you can use Core Data effectively:</em></p><ul><li><p>Cocoa fundamentals</p><p>Objective-C, memory management, notifications, and delegation. </p></li><li><p>Data modeling and the model-view-controller design pattern</p><p>The terminology used by Core Data is defined and explained in the <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CocoaFundamentals/CocoaDesignPatterns/CocoaDesignPatterns.html#//apple_ref/doc/uid/TP40002974-CH6-SW2" target="_self">“Object Modeling”</a></span> in <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CocoaFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002974">Cocoa Fundamentals Guide</a></span> section of <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CocoaFundamentals/CocoaDesignPatterns/CocoaDesignPatterns.html#//apple_ref/doc/uid/TP40002974-CH6" target="_self">Cocoa Design Patterns</a></span>. You should also ensure you understand the model-view-controller design pattern, and other related design patterns, described in the same document. Many of the ideas and patterns upon which Core Data is built derive from the relational model of database design—it is extremely helpful to have a basic understanding of this subject (see, for example, <span class="content_text"><a href="http://en.wikipedia.org/wiki/Relational_model" class="urlLink" rel="external">Wikipedia (Relational_model)</a></span>).</p></li><li><p>Key-value technologies</p><p>Key-value coding and key-value observing underpin Core Data. You should understand the concepts described in <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html#//apple_ref/doc/uid/10000107i" target="_self">Key-Value Coding Programming Guide</a></span> and <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i" target="_self">Key-Value Observing Programming Guide</a></span>.</p></li></ul><p>One of the persistent stores provided by Core Data is based upon SQLite. If you use this store, it is useful—although not essential—to have at least a superficial understanding of the SQL language. Documentation for SQLite is available from the <span class="content_text"><a href="http://www.sqlite.org/docs.html" class="urlLink" rel="external">SQLite project web site</a></span>. There are numerous resources that describe the SQL language, for example <span class="content_text"><a href="http://en.wikipedia.org/wiki/SQL" class="urlLink" rel="external">Wikipedia (SQL)</a></span>. </p><a name="//apple_ref/doc/uid/TP40005316-CH1-SW6" title="Path to Success"></a><h3>Path to Success</h3><p>The <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html#//apple_ref/doc/uid/TP40001075" target="_self">Core Data Programming Guide</a></span> is primarily a reference volume. You should not simply try to read it straight through to understand Core Data.</p><p>To learn about Core Data, you should typically follow this path:</p><ol class="ol"><li><p>Start by reading the overview in <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreData/Articles/cdBasics.html#//apple_ref/doc/uid/TP40001650" target="_self">Core Data Basics</a></span> (in <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html#//apple_ref/doc/uid/TP40001075" target="_self">Core Data Programming Guide</a></span>).</p><p>This will give you a basic understanding of what Core Data is and why you might want to use it.</p></li><li><p>Work through the <span class="content_text"><a href="../../../documentation/DataManagement/Conceptual/iPhoneCoreData01/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008305" target="_self">Core Data Tutorial for iOS</a></span>.</p><p>This provides a good introduction to the fundamentals of application development using Core Data.</p></li><li><p>Work through the <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreDataUtilityTutorial/Articles/00_introduction.html#//apple_ref/doc/uid/TP40001800" target="_self">Core Data Utility Tutorial</a></span>.</p><p>This will give you a greater appreciation of the different components of the framework—in particular the managed object model—without the distraction of a user interface.</p></li><li><p>Work through the tutorial described in <span class="content_text"><!--a target="_self" -->Creating a Managed Object Model with Xcode<!--/a--></span>.</p><p>This introduces the major user interface elements of, and teaches you how to use, the Xcode modeling tool.</p></li></ol><p>When specific areas need greater explanation, refer to the <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html#//apple_ref/doc/uid/TP40001075" target="_self">Core Data Programming Guide</a></span>.</p><p>After you’ve worked through the introductory materials, try creating more complex applications (using, for example, two related entities) as suggested in <span class="content_text"><a href="../../../documentation/DataManagement/Conceptual/iPhoneCoreData01/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008305" target="_self">Core Data Tutorial for iOS</a></span>. The <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html#//apple_ref/doc/uid/TP40001075" target="_self">Core Data Programming Guide</a></span> will be increasingly useful as you continue your exploration, as will <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/ModelObjects/Introduction.html#//apple_ref/doc/uid/TP40001931" target="_self">Model Object Implementation Guide</a></span> and <span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/Predicates/predicates.html#//apple_ref/doc/uid/TP40001789" target="_self">Predicate Programming Guide</a></span>.</p><p>As you progress, it is important to bear in mind that Core Data objects are still just objects, and have little influence on the user interface parts of your application simply by virtue of being Core Data objects. (In fact, the reverse is true—you may find that your user interface affects the way you structure your data.) You should practice creating Core Data applications using traditional Cocoa techniques such as target-action and delegation just as you would in a non-Core Data application. </p><a name="//apple_ref/doc/uid/TP40005316-CH1-SW2" title="Core Data in Depth"></a><h3>Core Data in Depth</h3><p>There are several documents that describe particular aspects of Core Data in greater depth than in the Programming Guide. You should use these documents only when you have a firm understanding of how Core Data works, and then only if and when you need to:</p><ul><li><p><span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/CoreDataVersioning/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004399" target="_self">Core Data Model Versioning and Data Migration Programming Guide</a></span></p><p>Read this document to learn how to support versioning.</p></li><li><p><span class="content_text"><a href="../../../documentation/Cocoa/Conceptual/AtomicStore_Concepts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004521" target="_self">Atomic Store Programming Topics</a></span></p><p>Read this document to understand how to create your own type of persistent store.</p></li></ul>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2009 Apple Inc. All Rights Reserved. &#40;Last updated: 2009-09-09&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="http://developer.apple.com/feedback/?v=1&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGettingStartedWithCoreData%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40005316-2.2&media=xcode" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="http://developer.apple.com/feedback/?v=2&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGettingStartedWithCoreData%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40005316-2.2&media=xcode" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="http://developer.apple.com/feedback/?v=3&url=%2Flibrary%2Fios%2Freferencelibrary%2FGettingStarted%2FGettingStartedWithCoreData%2F_index.html%3Fdocset%3Dcom.apple.adc.documentation.AppleiOS4_3.iOSLibrary-38.54%26id%3DTP40005316-2.2&media=xcode" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        
+        <!-- /CONTENTS -->
+    </article>
+</body>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../Resources/565/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../Resources/565/JavaScript/tasks.js"></script>
+</html>

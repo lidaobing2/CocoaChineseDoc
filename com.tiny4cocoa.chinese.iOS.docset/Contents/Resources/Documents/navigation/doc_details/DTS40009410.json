@@ -1,0 +1,2 @@
+
+{"shortOverview":"QA1678: Discusses how to work around a bug in ExtAudioFileTell where the returned value may be priming-frames too small.","revisionSummary":"Last change: New document.","url":"../../qa/qa2009/qa1678.html#//apple_ref/doc/uid/DTS40009410","dataFile":false}

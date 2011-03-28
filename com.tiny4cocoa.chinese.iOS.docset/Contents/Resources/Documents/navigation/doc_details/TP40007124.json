@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes the interface for receiving location data.","revisionSummary":"Last change: Added the locationManager:didChangeAuthorizationStatus: method.","url":"../../documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/doc/uid/TP40007124","dataFile":false}

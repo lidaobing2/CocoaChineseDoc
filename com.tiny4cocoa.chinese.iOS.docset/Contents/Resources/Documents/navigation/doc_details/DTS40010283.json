@@ -1,0 +1,2 @@
+
+{"shortOverview":"Demonstrates how to implement Leaderboards and Achievements.","revisionSummary":"Last change: -Fixed bug in how the &quot;submitAchievement:&quot; method handles the &quot;earnedAchievementCache&quot;. -Updated Read Me to clarify iTunes Connect's role in GameCenter.","url":"../../samplecode/GKTapper/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010283","dataFile":false}

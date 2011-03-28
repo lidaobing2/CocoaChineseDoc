@@ -1,0 +1,2 @@
+
+{"shortOverview":"Describes an object that manages input sources for a task.","revisionSummary":"Last change: Added information about the need to wake up a run loop to perform an enqueued block.","url":"../../documentation/CoreFoundation/Reference/CFRunLoopRef/Reference/reference.html#//apple_ref/doc/uid/20001441","dataFile":false}
